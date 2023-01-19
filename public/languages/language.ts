@@ -54,7 +54,7 @@ export const lang = {
             workExperienceItems: [
                 {
                     title: 'Junior+ Frontend developer',
-                    time: 'ЛАНИТ / 01.2022 – Present',
+                    time: 'ЛАНИТ / 01.2022 – н.в.',
                     description: [
                         {
                             text: 'За время работы в Ланит учавствовал в разработке трех проектов:',

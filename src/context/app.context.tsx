@@ -1,6 +1,5 @@
-import { createContext, PropsWithChildren, useEffect, useState } from 'react';
+import { createContext, PropsWithChildren, useState } from 'react';
 import { lang } from '../../public/languages/language';
-import { useCookies } from 'react-cookie';
 
 export interface IAppContext {
     language: string;
@@ -16,12 +15,7 @@ export const AppContext = createContext<IAppContext>({
     toggleModalOpen: false,
 });
 
-export const AppContextProvider = ({
-    language,
-    langValue,
-    toggleModalOpen,
-    children,
-}: PropsWithChildren<IAppContext>): JSX.Element => {
+export const AppContextProvider = ({ language, children }: PropsWithChildren<IAppContext>): JSX.Element => {
     const [languageValue, setLangValue] = useState<Object>(lang.rus);
 
     const [modalOpen, setModalOpen] = useState<boolean>(false);
