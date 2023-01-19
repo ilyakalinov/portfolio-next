@@ -12,7 +12,7 @@ export const LangSwitcher = ({ ...props }: CardProps): JSX.Element => {
     const [cookies, setCookie] = useCookies(['lang']);
 
     useEffect(() => {
-        setLanguage && setLanguage(cookies.lang);
+        setLanguage && setLanguage(cookies.lang || 'rus');
     }, [cookies]);
 
     return (
@@ -22,7 +22,7 @@ export const LangSwitcher = ({ ...props }: CardProps): JSX.Element => {
                 setLanguage && setLanguage(e.target.value);
                 setCookie('lang', e.target.value, { path: '/' });
             }}
-            value={cookies.lang}
+            value={cookies.lang || 'rus'}
             {...props}>
             <option className={styles.option}>rus</option>
             <option className={styles.option}>eng</option>
