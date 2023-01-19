@@ -1,0 +1,59 @@
+.wrapper {
+    margin-top: 8px;
+    padding-right: 10px;
+    width: max-content;
+}
+
+.buttonWrapper,
+.button {
+    border-radius: 24px;
+}
+
+.button {
+    padding: 20px;
+    transform: translateY(-3px);
+    top: -4px;
+    background: var(--perpel);
+    border: none;
+    cursor: pointer;
+    transition: 0.1s all;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+.button.pushed {
+    transform: translateY(0);
+}
+
+.buttonWrapper.perpel {
+    background: var(--perpel-dark);
+}
+
+.button.perpel {
+    background: var(--perpel);
+}
+
+.buttonWrapper.green {
+    background: var(--green-dark);
+}
+
+.button.green {
+    background: var(--green);
+}
+
+.buttonWrapper.drown {
+    background: var(--drown-dark);
+}
+
+.button.drown {
+    background: var(--drown);
+}
+
+.buttonWrapper.gray {
+    background: var(--green-blue);
+}
+
+.button.gray {
+    background: var(--green-light);
+}

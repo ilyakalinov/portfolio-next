@@ -1,0 +1,78 @@
+.main,
+.mainWrapper,
+.sideWrapper {
+    display: grid;
+    gap: 20px;
+}
+
+.educationItem,
+.workExperienceItem {
+    margin-top: 20px;
+}
+
+.sideWrapper {
+    display: grid;
+    grid-auto-rows: max-content;
+}
+
+.general {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.main {
+    margin-top: 20px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.buttomWrapper {
+    display: flex;
+}
+
+.education,
+.workExperience {
+    display: grid;
+}
+
+.educationTime,
+.workExperienceTime {
+    margin-bottom: 10px !important;
+    font-size: 16px !important;
+}
+
+.workExperienceDescr {
+    white-space: break-spaces;
+}
+
+.workProjectsDescription,
+.skillsItems,
+.toolsItems,
+.interestsItems {
+    padding-left: 10px;
+    margin: 10px 0 0 10px;
+    display: grid;
+    gap: 10px;
+}
+
+.iconsLang {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+@media (max-width: 765px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper.close {
+        display: none;
+    }
+
+    .wrapper.open {
+        display: block;
+    }
+}
