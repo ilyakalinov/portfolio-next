@@ -11,3 +11,9 @@
     color: var(--gray);
     padding-bottom: 20px;
 }
+
+@media (max-width: 565px) {
+    .inner {
+        width: 120px;
+    }
+}
