@@ -6,9 +6,9 @@ import { useState } from 'react';
 export const Button = ({ children, apperance, className, ...props }: ButtonProps): JSX.Element => {
     const [pushed, setPushed] = useState<boolean>(false);
     return (
-        <div className={styles.wrapper}>
+        <div className={cn(styles.wrapper, className)}>
             <div
-                className={cn(styles.buttonWrapper, className, {
+                className={cn(styles.buttonWrapper, {
                     [styles.perpel]: apperance == 'perpel',
                     [styles.green]: apperance == 'green',
                     [styles.drown]: apperance == 'drown',
