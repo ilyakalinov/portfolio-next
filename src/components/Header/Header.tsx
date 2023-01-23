@@ -28,7 +28,7 @@ export const Header = ({}: HeaderProps): JSX.Element => {
                         {langValue.header.button}
                     </Button>
                     <Paragraph
-                        data-rh='clock to copy'
+                        data-rh='click to copy'
                         size='l'
                         className={styles.paragraph}
                         onClick={() => navigator.clipboard.writeText('@ilya_kalinov')}>
