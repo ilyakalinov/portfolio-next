@@ -67,7 +67,8 @@ export const lang = {
                     ],
                 },
                 {
-                    title: 'Freelance Frontend developer / 08.2021 – 01.2022',
+                    title: 'Freelance Frontend developer',
+                    time: '08.2021 – 01.2022',
                     description: [{ text: 'Верстка, разработка, доработка и рефакторинг на чистом JS' }],
                 },
             ],
@@ -169,7 +170,8 @@ export const lang = {
                     ],
                 },
                 {
-                    title: 'Freelance Frontend developer / 08.2021 – 01.2022',
+                    title: 'Freelance Frontend developer',
+                    time: '08.2021 – 01.2022',
                     description: [{ text: 'Layout, development, revision and refactoring in pure JS' }],
                 },
             ],
